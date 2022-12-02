@@ -1,20 +1,6 @@
 # read input from text file
 f = open("/Users/meg/Documents/AoC2022/day2/input.txt")
 
-# elf
-# A = rock 1 point
-# B = paper 2 points
-# C = scissors  3 points
-
-# you
-# X = rock 1 point
-# Y = paper 2 points
-# Z = scissors 3 points
-
-# +0 for loss
-# +3 for draw
-# +6 for win
-
 # points for choice
 points = {"X":1, "Y":2, "Z":3}
 # points for score
