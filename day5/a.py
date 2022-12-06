@@ -16,14 +16,10 @@ stacks = [
 # move crates
 for line in f:
     moves = [int(i) for i in line.split() if i.isdigit()]
-    #Sprint(moves)
-    for i in range(int(moves[0])):
+    for i in range(moves[0]):
         crate = stacks[moves[1]-1].pop()
         stacks[moves[2]-1].append(crate)
 
 # print answer 
 for stack in stacks: 
     print(stack.pop())
-
-# wrong answer
-#NTLBBLMJT

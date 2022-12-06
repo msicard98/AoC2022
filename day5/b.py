@@ -16,9 +16,8 @@ stacks = [
 # move crates
 for line in f:
     moves = [int(i) for i in line.split() if i.isdigit()]
-    #Sprint(moves)
     crane = []
-    for i in range(int(moves[0])):
+    for i in range(moves[0]):
         crane.append(stacks[moves[1]-1].pop())
     for i in range(int(moves[0])):
         stacks[moves[2]-1].append(crane.pop())
